@@ -226,7 +226,7 @@ h4 {
     .header__bg {
         position: static;
         height: 40vh;
-        object-position: -55px 0;
+        object-position: -40px 0;
     }
 
     .header__content-btn {
