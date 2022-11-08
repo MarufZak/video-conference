@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__body">
                 <nav class="header__nav collapsible">
                     <a href="" class="header__logo logo collapsible__title">
-                        <img src="./img/logo.svg" alt="">
+                        <svg class="header__icon">
+                            <use xlink:href="./img/sprite.svg#logo"></use>
+                        </svg>
                     </a>
                     <span class="material-symbols-outlined collapsible__icon">menu</span>
                     <div class="header__nav-content collapsible__content">
@@ -43,7 +47,8 @@
                 </nav>
                 <div class="header__content">
                     <h1 class="header__title">The best video online meeting software.</h1>
-                    <p class="header__subtitle subtitle">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
+                    <p class="header__subtitle subtitle">Many desktop publishing packages and web page editors now use
+                        Lorem Ipsum as their default</p>
                     <button class="btn btn--green header__content-btn">Start for free</button>
                     <img src="./img/header.png" alt="" class="header__bg">
                 </div>
@@ -54,7 +59,8 @@
         <div class="sponsors">
             <div class="container">
                 <div class="sponsors__body">
-                    <h3 class="sponsors__title">Collaborate 2M+ startup and international companies ueses since 2018</h3>
+                    <h3 class="sponsors__title">Collaborate 2M+ startup and international companies ueses since 2018
+                    </h3>
                     <div class="sponsors__ratings">
                         <div class="sponsor__rating">
                             <h2 class="sponsor__rating-title">15k</h2>
@@ -78,8 +84,98 @@
                 </div>
             </div>
         </div>
+        <div class="features">
+            <div class="container">
+                <div class="features__body">
+                    <header class="features__header">
+                        <h2 class="features__title">Our Special Features</h2>
+                        <p class="features__subtitle subtitle">We are familiar with offline speed dating flow so we designed out online platform considering all the requirements</p>
+                    </header>
+                    <div class="features__cards">
+                        <article class="features__card">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#features-1"></use>
+                            </svg>
+                            <h4 class="features__card-title">Affordable Pricing</h4>
+                            <p class="features__card-subtitle subtitle">A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum</p>
+                            <a href="#" class="features__card-link">Learn more</a>
+                        </article>
+                        <article class="features__card">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#features-2"></use>
+                            </svg>
+                            <h4 class="features__card-title">Seamless Reliability</h4>
+                            <p class="features__card-subtitle subtitle">A dictionary of over 200 Latin words,with
+                                a handful of model sentence. structures, to generate Lorem Ipsum</p>
+                            <a href="#" class="features__card-link">Learn more</a>
+                        </article>
+                        <article class="features__card">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#features-3"></use>
+                            </svg>
+                            <h4 class="features__card-title">Secure Collaboration</h4>
+                            <p class="features__card-subtitle subtitle">A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum</p>
+                            <a href="#" class="features__card-link">Learn more</a>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="outlook">
+            <div class="container">
+                <div class="outlook__body">
+                    <article class="outlook__content">
+                        <h3>Integrate with your outlook or gmail calendar</h3>
+                        <p class="outlook__subtitle subtitle">We're here to help you connect, communicate,and express your ideas so you can get more done of together. We're proud to be trusted by millions  enterprises, small businesses, and individuals, just like you.</p>
+                        <button class="btn btn--secondary">Start for free</button>
+                    </article>
+                    <img src="./img/outlook@1380.jpg" class="outlook__img" srcset="./img/outlook@480.webp 480w, ./img/outlook@844.webp 844w, ./img/outlook@1137.webp 1137w, ./img/outlook@1380.webp 1380w" alt="happy user" sizes="(min-width: 710px) 40vw, 60vw">
+                </div>
+            </div>
+        </div>
+        <div class="power">
+            <div class="container">
+                <div class="power__body">
+                    <div class="power__conference">
+                        <img src="./img/power@800.jpg" srcset="./img/power@400.webp 400w, ./img/power@674.webp 674w, ./img/power@800.webp 800w" alt="video conference" class="power__img" sizes="(min-width: 998px) 25vw, (min-width: 578px) 50vw, 100vw">
+                        <div class="power__conference-modal">
+                            <h5 class="power__conference-title">Weekly Metting</h5>
+                            <img src="./img/conference-group.png" alt="conference members" class="power__conference-img">
+                            <button class="power__conference-button">Join metting</button>
+                        </div>
+                    </div>
+                    <article class="power__content">
+                        <h3 class="power__title">Powering your comunicaiton from anywhere world.</h3>
+                        <p class="power__subtitle subtitle">We're here to help you connect, communicate,and express your ideas so you can get more done of together. We're proud to be trusted by millions  enterprises</p>
+                        <ul class="power__list">
+                            <li class="power__list-item">
+                                <span class="material-symbols-outlined power__list-item-icon">
+                                    priority
+                                </span> 
+                                <span class="power__list-text">Faster than ever</span>
+                            </li>
+                            <li class="power__list-item">
+                                <span class="material-symbols-outlined power__list-item-icon">
+                                    priority
+                                </span> 
+                                <span class="power__list-text">Bosts post-metting productivity</span>
+                            </li>
+                            <li class="power__list-item">
+                                <span class="material-symbols-outlined power__list-item-icon">
+                                    priority
+                                </span> 
+                                <span class="power__list-text">Enables stronger relationships</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn--secondary power__button">Start Free trail</button>
+                    </article>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
