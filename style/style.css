@@ -161,9 +161,9 @@ h4 {
 }
 
 .header__body {
-    /* min-height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; */
+    flex-direction: column;
 }
 
 .header__content {
@@ -192,9 +192,9 @@ h4 {
 }
 
 .header__nav {
-    /* --header-nav-gap: 2rem;
+    --header-nav-gap: 2rem;
     padding: 1.5rem 0;
-    height: var(--header-nav-height); */
+    height: var(--header-nav-height);
 }
 
 .header__subtitle {
@@ -202,20 +202,20 @@ h4 {
 }
 
 .header__nav {
-    /* display: grid;
-    grid-template-columns: 1fr 5fr; */
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 
 .header__nav-content {
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1; */
+    z-index: 1;
 }
 
 .header__nav-list {
-    /* display: flex;
-    gap: var(--header-nav-gap); */
+    display: flex;
+    gap: var(--header-nav-gap);
 }
 
 .header__nav-link {
@@ -234,9 +234,9 @@ h4 {
 
 @media screen and (max-width: 992px) {
     .header__content {
-        /* display: flex;
+        display: flex;
         flex-direction: column;
-        align-items: center; */
+        align-items: center;
         padding: 0;
         text-align: center;
     }
@@ -261,11 +261,11 @@ h4 {
     .header__nav-content,
     .header__nav-list,
     .header__nav-buttons {
-        /* flex-direction: column;
+        flex-direction: column;
         text-align: center;
-        gap: var(--header-nav-gap); */
+        gap: var(--header-nav-gap);
     }
-/* 
+
     .header__nav-list {
         padding-top: var(--header-nav-gap);
     }
@@ -276,7 +276,7 @@ h4 {
 
     .header__nav-content {
         border-radius: 1rem;
-    } */
+    }
 }
 
 
@@ -285,6 +285,7 @@ h4 {
 
 .collapsible__icon {
     display: none;
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -315,11 +316,15 @@ h4 {
     }
 
     .collapsible.open .collapsible__content {
-        max-height: 100vh;
+        max-height: 300px;
     }
 
     .collapsible.open .collapsible__icon {
         color: var(--color-primary);
+    }
+
+    .collapsible.open .collapsible__icon.rotate {
+        transform: rotate(90deg);
     }
 }
 
