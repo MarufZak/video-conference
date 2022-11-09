@@ -1,7 +1,9 @@
-const collapsibleButton = document.querySelectorAll('.collapsible__icon');
+const collapsible = document.querySelectorAll('.collapsible');
 
-collapsibleButton.forEach(item=>{
-    item.addEventListener('click',()=>{
-        item.parentElement.classList.toggle('open')
+collapsible.forEach(item=>{
+    item.addEventListener('click',(e)=>{
+        if (!e.target.classList.contains('footer__list-item')) {
+            item.classList.toggle('open')
+        }
     });
 });

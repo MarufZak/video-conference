@@ -122,7 +122,7 @@ h4 {
     font-size: 1.6rem;
     line-height: 1.8;
     color: var(--color-primary);
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -300,14 +300,18 @@ h4 {
         display: inline-block;
     }
 
+    .collapsible__title {
+        margin-bottom: 0;
+    }
+
     .collapsible__content {
+        margin-top: 1rem;
         width: 100%;
-        position: absolute;
-        top: 100%;
         max-height: 0;
         overflow: hidden;
         transition: 0.3s;
         background: var(--color-gray);
+        border-radius: 1rem;
     }
 
     .collapsible.open .collapsible__content {
@@ -717,6 +721,7 @@ h4 {
 
 .testimonial {
     padding: 6rem 0;
+    background: #FAFAFA;
 }
 
 .testimonial__body {
@@ -752,5 +757,86 @@ h4 {
 
     .testimonial__content {
         text-align: center;
+    }
+}
+
+
+.footer {
+    padding: 12rem 0;
+}
+
+.footer__first {
+    padding-right: 30%;
+}
+
+.footer__first-subtitle {
+    margin-top: 2rem;
+}
+
+.footer__icon{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.footer__body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.footer__second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list-item {
+    color: var(--color-primary);
+    opacity: 0.9;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+.footer__list-link {
+    color: inherit;
+}
+
+
+@media screen and (max-width: 992px) {
+    .footer__body {
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 3rem 0;
+    }
+
+    .footer__first {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .footer__logo {
+        justify-content: center;
+    }
+
+    .footer__first-subtitle {
+        margin: 1rem 0;
+    }
+
+    .footer__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,auto);
+        grid-row-gap: 2rem;
+    }
+
+    .footer__second {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .footer__list-item {
+        padding: 1rem 2rem;
     }
 }
