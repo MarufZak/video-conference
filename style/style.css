@@ -48,7 +48,8 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
-h1,h2 {
+h1,
+h2 {
     font-size: 4.8rem;
 }
 
@@ -73,7 +74,7 @@ h4 {
     align-items: center;
     gap: .5rem;
 }
- 
+
 .logo .header__icon {
     width: 3.2rem;
     height: 3.2rem;
@@ -128,23 +129,26 @@ h4 {
 
 
 @media screen and (max-width: 576px) {
-    h1 {
+    h1,h2 {
         font-size: 3.6rem;
     }
-    h2 {
+
+    h3,
+    h4 {
         font-size: 2.4rem;
     }
-    h3,h4 {
-        font-size: 2rem;
-    }
 
-    h1,h2,h3,h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
         margin-bottom: 1.2rem;
     }
 
     .subtitle {
         font-size: 1.4rem;
         line-height: 1.4;
+        margin-bottom: 1rem;
     }
 }
 
@@ -253,6 +257,7 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+
     .header__nav-content,
     .header__nav-list,
     .header__nav-buttons {
@@ -260,6 +265,7 @@ h4 {
         text-align: center;
         gap: var(--header-nav-gap);
     }
+
     .header__nav-list {
         padding-top: var(--header-nav-gap);
     }
@@ -284,7 +290,7 @@ h4 {
 @media screen and (max-width: 768px) {
     .collapsible {
         align-items: center;
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
@@ -315,19 +321,19 @@ h4 {
 
 
 
-
-
-
-
 /*=== SPONSORS ===*/
+
+.sponsors {
+    padding: 6rem 0;
+}
 
 .sponsors__body {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: repeat(2,auto);
-    grid-template-areas:   
-    "t r"
-    "l l";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "t r"
+        "l l";
     align-items: center;
     row-gap: 5rem;
 }
@@ -372,13 +378,17 @@ h4 {
 
 
 @media screen and (max-width: 768px) {
+    .sponsors {
+        padding: 3rem 0;
+    }
+
     .sponsors__body {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
-        "t"
-        "r"
-        "l";
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "t"
+            "r"
+            "l";
         text-align: center;
         row-gap: 3rem;
     }
@@ -391,12 +401,10 @@ h4 {
 
 
 
-
-
 /*=== FEATURES ===*/
 
 .features {
-    padding: 15rem 0;
+    padding: 6rem 0;
 }
 
 .features__header {
@@ -411,7 +419,7 @@ h4 {
     justify-content: space-between;
 }
 
-.features__card > .icon {
+.features__card>.icon {
     width: 7.2rem;
     height: 7.2rem;
 }
@@ -425,7 +433,7 @@ h4 {
     color: var(--color-primary);
     line-height: 1.2;
     font-weight: 500;
-    
+
 }
 
 
@@ -437,7 +445,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
     .features {
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
 
     .features__cards {
@@ -456,23 +464,24 @@ h4 {
     .features__card-title {
         margin-top: 2rem;
     }
+
     .features__header {
         padding: 0;
     }
+
     .features__card {
         width: 100%;
         text-align: left;
     }
-    
-}
 
+}
 
 
 
 /*=== OUTLOOK ===*/
 
 .outlook {
-    padding: 8rem 0;
+    padding: 6rem 0;
     background-color: rgba(0, 94, 235, 0.05);
 }
 
@@ -485,15 +494,18 @@ h4 {
 
 .outlook__img {
     /* width: 100%; */
-    border-radius: 1rem;
+    border-radius: 3%;
     object-fit: contain;
 }
 
 
 @media screen and (max-width: 768px) {
+    .outlook {
+        padding: 3rem 0;
+    }
     .outlook__body {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,auto);
+        grid-template-rows: repeat(2, auto);
         justify-items: center;
         text-align: center;
     }
@@ -507,19 +519,17 @@ h4 {
 
 
 
-
-
 /*=== POWER ===*/
 
 .power {
-    padding: 13rem 0;
+    padding: 6rem 0;
 }
 
 .power__body {
     display: grid;
     align-items: center;
     grid-template-columns: 400px 1fr;
-    grid-column-gap: 15rem;
+    grid-gap: clamp(3rem, 12.5vw, 20rem);
 }
 
 .power__list-item {
@@ -580,16 +590,21 @@ h4 {
 
 .power__img {
     width: 100%;
+    border-radius: 5%;
 }
 
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 768px) {
+    .power {
+        padding: 3rem 0;
+    }
+
     .power__content {
         text-align: center;
     }
 
     .power__body {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,auto);
+        grid-template-rows: repeat(2, auto);
     }
 
     .power__conference {
@@ -606,5 +621,136 @@ h4 {
 @media screen and (max-width: 576px) {
     .power {
         padding: 8rem 0;
+    }
+}
+
+
+
+
+
+
+/*=== PLAN ===*/
+
+.plan {
+    padding: 6rem 0;
+}
+
+.plan__header {
+    text-align: center;
+    padding: 0 20%;
+}
+
+.plan__cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan__card {
+    border: 1px solid rgb(35, 38, 41,0.2);
+    border-radius: 10px;
+}
+
+.plan__card-header h3 {
+    margin-bottom: 0;
+}
+
+.plan__card-header {
+    padding: 2rem 4rem;
+    border-bottom: 1px solid rgb(0, 0, 0,0.2);
+}
+
+.plan__card-footer {
+    padding: 4rem 4rem 6rem 4rem;
+}
+
+.plan__card-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    color: var(--color-primary);
+}
+.plan__card-list-item:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+.plan__card-list-icon {
+    color: rgb(0, 95, 236,0.8);
+}
+
+.plan__card-list {
+    margin-bottom: 4rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .plan {
+        padding: 3rem 0;
+    }
+
+    .plan__header {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .plan__card-header {
+        padding: 1rem 2rem;
+    }
+
+    .plan__card-footer {
+        padding: 1rem 2rem;
+    }
+
+    .plan__card-list {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+.testimonial {
+    padding: 6rem 0;
+}
+
+.testimonial__body {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.testimonial__img img {
+    /* width: 100%; */
+    object-fit: contain;
+}
+
+.testimonial__name {
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.testimonial__job {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: var(--color-primary);
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial__body {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .testimonial__content {
+        text-align: center;
     }
 }
